@@ -1,0 +1,16 @@
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+/* Navbar.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #111;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  z-index: 1000;
+}

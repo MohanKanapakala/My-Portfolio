@@ -1,0 +1,95 @@
+/* ============================= */
+/*           NAVBAR              */
+/* ============================= */
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);   /* Beautiful Blue Gradient */
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* INNER CONTAINER */
+.navbar .inner {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* NAV LINKS LIST */
+.navbar ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  align-items: center;
+}
+
+/* NAV LINK STYLE */
+.navbar ul li a {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* 🔥 Animated Underline Hover Effect */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: #00eaff;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* 🔥 Hover Glow */
+.navbar ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00eaff, 0 0 15px #00eaff;
+  transform: translateY(-2px);
+}
+
+/* ACTIVE LINK STYLE (use manually if required) */
+.navbar ul li a.active {
+  color: #00eaff;
+  font-weight: bold;
+}
+
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+@media (max-width: 768px) {
+  .navbar .inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    gap: 20px;
+  }
+}
