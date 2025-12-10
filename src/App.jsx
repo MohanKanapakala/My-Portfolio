@@ -14,7 +14,7 @@ export default function App() {
       {/* ================= NAVBAR ================= */}
       <nav className="navbar">
         <div className="inner">
-          <div className="logo">Portfolio</div>
+          <div className="logo">MOHANA RAO KANAPAKALA</div>
 
           <ul>
             <li>

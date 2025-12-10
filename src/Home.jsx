@@ -12,8 +12,9 @@ export default function Home() {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/MyResume.pdf"; // Place Resume.pdf in public folder
+    link.href = "/MyFinalResume.pdf"; // Place Resume.pdf in public folder
     link.download = "Mohana_Rao_Resume.pdf";
+    
     link.click();
   };
 
@@ -46,7 +47,7 @@ export default function Home() {
         {/* RIGHT IMAGE */}
         <div className="hero-right">
           <div className="image-circle">
-            <img src="/images/Profile.jpg" alt="profile" />
+            <img src="/images/Profile-Professional.png" alt="profile" />
           </div>
         </div>
       </div>
